@@ -13,6 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a:hover,
 a:active,
 a:focus {
@@ -134,7 +138,7 @@ a:focus {
 
 #intro:before {
     content: "";
-    background: rgba(6, 12, 34, 0.8);
+    background: rgba(6, 12, 34, 0.8); 
     position: absolute;
     bottom: 0;
     top: 0;
@@ -170,6 +174,26 @@ a:focus {
     font-weight: 600;
     text-transform: uppercase;
 }
+
+#AboutUs h1 {
+    color: black;
+    font-family: "Robot", sans-serif;
+    text-decoration:underline;
+    text-align: center;
+    font-size: 30px;
+    padding-top:50px;
+    font-weight: 300;
+}
+
+#AboutUs p {
+    color:black;
+    font-family:"Robot", sans-serif;
+    text-align: justify;
+    font-size:20px;
+    padding:20px 350px 0 350px;
+    line-height:150%;
+}
+
 
 .center {
     width: 80%;
@@ -228,3 +252,87 @@ a:focus {
     padding-bottom: 10px;
     font-family: "Roboto", sans-serif;
 }
+
+/* faq */
+#faq{
+    display: flex;
+    padding: 50px 350px;
+  }
+
+#faq h1{
+    color: black;
+    font-family: "Robot", sans-serif;
+    text-decoration:underline;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-left: 300px;
+}
+#faq .add{ /*Add is the name for the plus icon*/
+    display: block;
+}
+
+#faq .minus{ /*Minus is the name for the minus icon*/
+	display: none;
+}
+
+  .question-item{
+    background-color: transparent;    
+    margin-bottom: 10px;
+    padding: 10px 0;
+    /* border-bottom: 1px solid black; */
+
+  }
+
+  .question-title:hover{
+     color:#f82249;
+ }
+  .question-title{
+    display: flex; 
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  
+  .question-title h2{
+    color: black;
+    font-size: 20px;
+    font-family: "Robot", sans-serif;
+    font-weight: 500;
+  } 
+  
+  .question-answer{
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: Normal;
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.2s;
+    font-family: "Robot", sans-serif;
+  }
+
+
+/*Contact*/
+#contact{
+    display: inline-block;
+    width: 100%;
+    text-align:center;
+    padding-bottom:50px;
+}
+#contact h1{
+    color: black;
+    font-family: "Robot", sans-serif;
+    text-decoration:underline;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 0 20px 0;
+    font-weight: 300;
+}
+#contact a{
+    color:black;
+    cursor: pointer;
+    text-align:center;
+}
+#contact a:hover{
+    color:#f82249;
+    }
