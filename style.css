@@ -13,10 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 a:hover,
 a:active,
 a:focus {
@@ -138,7 +134,7 @@ a:focus {
 
 #intro:before {
     content: "";
-    background: rgba(6, 12, 34, 0.8); 
+    background: rgba(6, 12, 34, 0.8);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -175,44 +171,43 @@ a:focus {
     text-transform: uppercase;
 }
 
-
-#contact-main{
+#contact-main {
     display: inline-block;
     width: 100%;
 }
-#contact-main a{
-    color:white;
+
+#contact-main a {
+    color: white;
     cursor: pointer;
-    text-align:center;
+    text-align: center;
 }
-#contact-main a:hover{
-    color:#f82249;
-    }
-#contact-main i{
+
+#contact-main a:hover {
+    color: #f82249;
+}
+
+#contact-main i {
     margin: 0.5rem;
 }
-
-
 
 #AboutUs h1 {
     color: black;
     font-family: "Robot", sans-serif;
-    text-decoration:underline;
+    text-decoration: underline;
     text-align: center;
     font-size: 30px;
-    padding-top:50px;
+    padding-top: 50px;
     font-weight: 300;
 }
 
 #AboutUs p {
-    color:black;
-    font-family:"Robot", sans-serif;
+    color: black;
+    font-family: "Robot", sans-serif;
     text-align: justify;
-    font-size:20px;
-    padding:20px 350px 0 350px;
-    line-height:150%;
+    font-size: 20px;
+    padding: 20px 350px 0 350px;
+    line-height: 150%;
 }
-
 
 .center {
     width: 80%;
@@ -227,12 +222,12 @@ a:focus {
     font-weight: 600;
 }
 
-.container-gallery {
+.container-exec {
     width: 80%;
     margin: 2rem auto;
 }
 
-.gallery {
+.exec {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* grid-template-columns: repeat(4, 1fr); */
@@ -243,13 +238,13 @@ a:focus {
     grid-gap: 50px;
 }
 
-.gallery__img {
+.exec__img {
     width: 100%;
     height: 70%;
     object-fit: cover;
 }
 
-.gallery__item {
+.exec__item {
     box-shadow: rgb(15 15 15 / 10%) 0px 0px 0px 1px, rgb(15 15 15 / 10%) 0px 3px 4px;
     display: block;
     border-radius: 3px;
@@ -272,54 +267,61 @@ a:focus {
     font-family: "Roboto", sans-serif;
 }
 
+
 /* faq */
-#faq{
+
+#faq {
     display: flex;
     padding: 20px 350px;
-  }
+    /* margin: 2rem auto; */
+}
 
-#faq h1{
+#faq h1 {
     color: black;
     font-family: "Robot", sans-serif;
-    text-decoration:underline;
+    text-decoration: underline;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-    padding-left: 340px; /* fix this later, couldn't center*/
+    padding-left: 340px;
+    /* fix this later, couldn't center*/
 }
-#faq .add{ /*Add is the name for the plus icon*/
+
+#faq .add {
+    /*Add is the name for the plus icon*/
     display: block;
 }
 
-#faq .minus{ /*Minus is the name for the minus icon*/
-	display: none;
+#faq .minus {
+    /*Minus is the name for the minus icon*/
+    display: none;
 }
 
-  .question-item{
-    background-color: transparent;    
+.question-item {
+    background-color: transparent;
     margin-bottom: 10px;
     padding: 10px 0;
     /* border-bottom: 1px solid black; */
+}
 
-  }
+.question-title:hover {
+    color: #f82249;
+}
 
-  .question-title:hover{
-     color:#f82249;
- }
-  .question-title{
-    display: flex; 
+.question-title {
+    display: flex;
     cursor: pointer;
     transition-duration: 0.5s;
-  }
-  
-  .question-title h2{
+}
+
+.question-title h2 {
     color: black;
     font-size: 20px;
     font-family: "Robot", sans-serif;
     font-weight: 500;
-  } 
-  
-  .question-answer{
+}
+
+.question-answer {
     font-size: 18px;
     margin-top: 15px;
     font-weight: Normal;
@@ -328,80 +330,156 @@ a:focus {
     position: relative;
     transition: max-height 0.2s;
     font-family: "Robot", sans-serif;
-  }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 2;  */
+    /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /** Alternative Syntax **/
+    /* grid-column: 3 / span 2;  */
+    /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    /** Alternative Syntax **/
+    /* grid-column: 5 / span 4;
+    grid-row: 1 / span 5; */
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 4;  */
+    /* grid-row: 3 / span 3; */
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 4; */
+    /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    /** Alternative Syntax **/
+    /* grid-column: 5 / span 4; */
+    /* grid-row: 6 / span 3; */
+}
 
 
 /*Contact*/
-#contact{
+
+#contact {
     display: inline-block;
     width: 100%;
-    text-align:center;
-    padding-bottom:50px;
+    text-align: center;
+    padding-bottom: 50px;
 }
-#contact h1{
+
+#contact h1 {
     color: black;
     font-family: "Robot", sans-serif;
-    text-decoration:underline;
+    text-decoration: underline;
     text-align: center;
     font-size: 30px;
     padding: 0 0 20px 0;
     font-weight: 300;
 }
-#contact a{
-    color:black;
+
+#contact a {
+    color: black;
     cursor: pointer;
-    text-align:center;
+    text-align: center;
 }
-#contact a:hover{
-    color:#f82249;
-    }
-#contact i{
+
+#contact a:hover {
+    color: #f82249;
+}
+
+#contact i {
     margin: 0.5rem;
 }
 
 
-
 /* trying out some functions */
+
 #contact2 i {
     font-size: 2rem;
     margin: 0.5rem;
     transition: transform 500ms ease-out;
-  }
-  
-  #contact2 i:hover {
+}
+
+#contact2 i:hover {
     transform: translate(0px, -5px);
-  }
-  
-  #contact2 .fa-instagram  {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+#contact2 .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-   -webkit-text-fill-color:transparent;
-  }
-  
-  #contact2 .fa-github {
-  background: linear-gradient(to top, #a18cd1 10%, #fbc2eb 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color:transparent;
-  }
-  
-  
-  #contact2 .fa-envelope {
+    -webkit-text-fill-color: transparent;
+}
+
+#contact2 .fa-github {
+    background: linear-gradient(to top, #a18cd1 10%, #fbc2eb 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#contact2 .fa-envelope {
     background-image: linear-gradient(43deg, #324ac2 5%, #c05db9 50%, #FFCC70 85%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color:transparent;
-  }
-  
-  #contact2 .fa-discord {
+    -webkit-text-fill-color: transparent;
+}
+
+#contact2 .fa-discord {
     background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-   -webkit-text-fill-color:transparent;
-  }
-  
+    -webkit-text-fill-color: transparent;
+}
