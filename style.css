@@ -7,6 +7,7 @@
     vertical-align: baseline;
     background: transparent;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -31,14 +32,36 @@ a:focus {
     z-index: 100;
 }
 
+.container-header {
+    padding-top: 3em;
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    border-bottom: 1px solid rgb(223, 223, 222);
+}
 
-/* .container{
-    display: flex;
+.container-header h1 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /* text-align: center; */
+    /* display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-content: center;
-} */
+    align-content: center; */
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
 
 #header #logo h1 {
     font-size: 36px;
@@ -190,7 +213,8 @@ a:focus {
     margin: 0.5rem;
 }
 
-#AboutUs h1 {
+
+/* #AboutUs h1 {
     color: black;
     font-family: "Robot", sans-serif;
     text-decoration: underline;
@@ -207,7 +231,7 @@ a:focus {
     font-size: 20px;
     padding: 20px 350px 0 350px;
     line-height: 150%;
-}
+} */
 
 .center {
     width: 80%;
@@ -222,17 +246,18 @@ a:focus {
     font-weight: 600;
 }
 
-.container-exec {
+
+/* .container-exec {
     width: 80%;
     margin: 2rem auto;
-}
+} */
 
 .exec {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* grid-template-columns: repeat(4, 1fr); */
     grid-template-rows: repeat(2, 15vw);
-    border-top: 1px solid rgb(223, 223, 222);
+    /* border-top: 1px solid rgb(223, 223, 222); */
     padding-top: 16px;
     /* grid-auto-rows: 1fr; */
     grid-gap: 50px;
@@ -270,10 +295,12 @@ a:focus {
 
 /* faq */
 
+
+/*
 #faq {
     display: flex;
     padding: 20px 350px;
-    /* margin: 2rem auto; */
+    margin: 2rem auto;
 }
 
 #faq h1 {
@@ -284,8 +311,8 @@ a:focus {
     font-size: 30px;
     font-weight: 300;
     padding-left: 340px;
-    /* fix this later, couldn't center*/
-}
+    fix this later, couldn't center
+} */
 
 #faq .add {
     /*Add is the name for the plus icon*/
