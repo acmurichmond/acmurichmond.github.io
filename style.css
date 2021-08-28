@@ -406,27 +406,22 @@ a:focus {
 }
 
 
-/*Contact*/
+/*Footer*/
+
+.footer{
+    height: 120px;
+    width: 100%;
+    background-color: #132950;
+    color: white;
+    text-align: center;
+}
 
 #contact {
     display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-#contact h1 {
-    color: black;
-    font-family: "Robot", sans-serif;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 30px;
-    padding: 0 0 20px 0;
-    font-weight: 300;
 }
 
 #contact a {
-    color: black;
+    color: white;
     cursor: pointer;
     text-align: center;
 }
@@ -436,50 +431,6 @@ a:focus {
 }
 
 #contact i {
+    padding-top:30px;
     margin: 0.5rem;
-}
-
-
-/* trying out some functions */
-
-#contact2 i {
-    font-size: 2rem;
-    margin: 0.5rem;
-    transition: transform 500ms ease-out;
-}
-
-#contact2 i:hover {
-    transform: translate(0px, -5px);
-}
-
-#contact2 .fa-instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#contact2 .fa-github {
-    background: linear-gradient(to top, #a18cd1 10%, #fbc2eb 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#contact2 .fa-envelope {
-    background-image: linear-gradient(43deg, #324ac2 5%, #c05db9 50%, #FFCC70 85%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#contact2 .fa-discord {
-    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
