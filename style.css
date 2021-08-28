@@ -33,7 +33,7 @@ a:focus {
 }
 
 .container-header {
-    padding-top: 3em;
+    padding-top: 1rem;
     width: 80%;
     margin: 2rem auto;
     text-align: center;
@@ -45,6 +45,7 @@ a:focus {
     font-family: "Roboto", sans-serif;
     font-size: 50px;
     font-weight: 600;
+    padding-bottom: 1rem;
 }
 
 .container {
@@ -246,12 +247,6 @@ iframe {
     font-weight: 600;
 }
 
-
-/* .container-exec {
-    width: 80%;
-    margin: 2rem auto;
-} */
-
 .exec {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -273,7 +268,6 @@ iframe {
     box-shadow: rgb(15 15 15 / 10%) 0px 0px 0px 1px, rgb(15 15 15 / 10%) 0px 3px 4px;
     display: block;
     border-radius: 3px;
-    /* background-color: #f8234a; */
     overflow: hidden;
     position: static;
     height: 100%;
@@ -294,25 +288,6 @@ iframe {
 
 
 /* faq */
-
-
-/*
-#faq {
-    display: flex;
-    padding: 20px 350px;
-    margin: 2rem auto;
-}
-
-#faq h1 {
-    color: black;
-    font-family: "Robot", sans-serif;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-    padding-left: 340px;
-    fix this later, couldn't center
-} */
 
 #faq .add {
     /*Add is the name for the plus icon*/
@@ -377,9 +352,6 @@ iframe {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    /** Alternative Syntax **/
-    /* grid-column: 1 / span 2;  */
-    /* grid-row: 1 / span 2; */
 }
 
 .gallery__item--2 {
@@ -387,9 +359,6 @@ iframe {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
-    /** Alternative Syntax **/
-    /* grid-column: 3 / span 2;  */
-    /* grid-row: 1 / span 2; */
 }
 
 .gallery__item--3 {
@@ -397,9 +366,6 @@ iframe {
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 6;
-    /** Alternative Syntax **/
-    /* grid-column: 5 / span 4;
-    grid-row: 1 / span 5; */
 }
 
 .gallery__item--4 {
@@ -407,9 +373,6 @@ iframe {
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 6;
-    /** Alternative Syntax **/
-    /* grid-column: 1 / span 4;  */
-    /* grid-row: 3 / span 3; */
 }
 
 .gallery__item--5 {
@@ -417,9 +380,6 @@ iframe {
     grid-column-end: 5;
     grid-row-start: 6;
     grid-row-end: 9;
-    /** Alternative Syntax **/
-    /* grid-column: 1 / span 4; */
-    /* grid-row: 6 / span 3; */
 }
 
 .gallery__item--6 {
@@ -427,15 +387,13 @@ iframe {
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 9;
-    /** Alternative Syntax **/
-    /* grid-column: 5 / span 4; */
-    /* grid-row: 6 / span 3; */
 }
 
 
 /*Footer*/
 
-.footer{
+.footer {
+    margin-top: 2em;
     height: 120px;
     width: 100%;
     background-color: #132950;
@@ -458,6 +416,6 @@ iframe {
 }
 
 #contact i {
-    padding-top:30px;
+    padding-top: 2rem;
     margin: 0.5rem;
 }
