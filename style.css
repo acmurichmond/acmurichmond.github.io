@@ -215,29 +215,40 @@ iframe {
     margin: 0.5rem;
 }
 
-
-/* #AboutUs h1 {
+#about p {
     color: black;
-    font-family: "Robot", sans-serif;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 30px;
-    padding-top: 50px;
-    font-weight: 300;
-}
-
-#AboutUs p {
-    color: black;
-    font-family: "Robot", sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: justify;
     font-size: 20px;
-    padding: 20px 350px 0 350px;
+    padding: 0px 200px 0;
     line-height: 150%;
-} */
+}
+
+#info {
+    width: 50%;
+    margin: 3rem auto 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.info1 {
+    width: 100%;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.info1 h5 {
+    margin-bottom: 0.3rem;
+}
 
 .center {
-    width: 80%;
-    margin: 2rem auto;
+    padding: 0;
+    /* width: 12%; */
+    margin: 0 auto 1rem;
     text-align: center;
 }
 
@@ -246,6 +257,10 @@ iframe {
     font-family: "Roboto", sans-serif;
     font-size: 50px;
     font-weight: 600;
+}
+
+.center img {
+    width: 12%;
 }
 
 .exec {
