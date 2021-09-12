@@ -103,7 +103,9 @@ iframe {
 
 #nav-menu-container {
     display: table;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .nav-menu a {
@@ -148,7 +150,9 @@ iframe {
 #intro {
     width: 100%;
     height: 100vh;
-    background: url(../img/cat.jpg) top center;
+    background: top center;
+    background-image: url(/img/hackathon2.JPG);
+    transition: background-image 3s;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -377,6 +381,7 @@ iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .gallery__item--1 {

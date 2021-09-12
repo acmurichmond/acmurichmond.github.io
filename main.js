@@ -13,6 +13,26 @@ for (var i = 0; i < listItems.length; i++) {
 }
 
 
+window.onload = function() {
+    // Array of Images
+    var backgroundImg = ["/img/hackathon1.JPG",
+        "/img/hackathon2.JPG",
+        "/img/hackathon3.JPG",
+        "/img/hackathon4.JPG",
+        "/img/spiderfest.jpeg",
+        "/img/classroom.JPG",
+    ]
+
+    setInterval(changeImage, 10000);
+
+    function changeImage() {
+        var i = Math.floor((Math.random() * 6));
+
+        document.getElementById("intro").style.backgroundImage = "url('" + backgroundImg[i] + "')";
+
+    }
+}
+
 // faq https://github.com/acmurichmond/acm_website.git
 const questions = document.getElementsByClassName('question-title') //Gets all the questions (plus icon)
 
