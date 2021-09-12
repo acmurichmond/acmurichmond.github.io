@@ -8,11 +8,18 @@
     background: transparent;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
     scroll-margin-top: 5.5em;
 }
 
-html {
+html,
+body {
     scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 a:hover,
@@ -25,7 +32,7 @@ a:focus {
 
 #header {
     background: #132950;
-    padding: 20px;
+    padding: 1em;
     text-align: center;
     position: fixed;
     top: 0;
@@ -35,7 +42,7 @@ a:focus {
 
 .container-header {
     padding-top: 1rem;
-    width: 80%;
+    max-width: 80%;
     margin: 2rem auto;
     text-align: center;
     border-bottom: 1px solid rgb(223, 223, 222);
@@ -50,7 +57,7 @@ a:focus {
 }
 
 .container {
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
     /* text-align: center; */
     /* display: flex;
@@ -66,13 +73,13 @@ iframe {
 }
 
 #header #logo h1 {
-    font-size: 36px;
+    font-size: 2.1em;
     margin: 0;
     padding: 6px 0;
     line-height: 1;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 0.3vw;
     text-transform: uppercase;
 }
 
@@ -109,13 +116,13 @@ iframe {
 }
 
 .nav-menu a {
-    padding: 8px;
+    padding: 0.3em;
     text-decoration: none;
     display: inline-block;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.3em;
     outline: none;
 }
 
@@ -187,7 +194,7 @@ iframe {
 #intro h1 {
     color: white;
     font-family: "Roboto", sans-serif;
-    font-size: 50px;
+    font-size: 3em;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -195,7 +202,7 @@ iframe {
 #intro h2 {
     color: #f82249;
     font-family: "Roboto", sans-serif;
-    font-size: 40px;
+    font-size: 2.6em;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -224,22 +231,24 @@ iframe {
     font-family: "Roboto", sans-serif;
     text-align: justify;
     font-size: 20px;
-    padding: 0px 200px 0;
+    /* padding: 0px 15rem 0; */
+    margin: 0 auto;
+    max-width: 80%;
     line-height: 150%;
 }
 
 #info {
-    width: 50%;
+    max-width: 60%;
     margin: 3rem auto 0;
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
 }
 
 .info1 {
-    width: 100%;
+    max-width: 100%;
     color: black;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
@@ -264,7 +273,8 @@ iframe {
 }
 
 .center img {
-    width: 12%;
+    max-width: 24%;
+    min-width: 12%;
 }
 
 .exec {
@@ -275,7 +285,7 @@ iframe {
     /* border-top: 1px solid rgb(223, 223, 222); */
     padding-top: 16px;
     /* grid-auto-rows: 1fr; */
-    grid-gap: 50px;
+    grid-gap: 3em;
 }
 
 .exec__img {
@@ -286,11 +296,14 @@ iframe {
 
 .exec__item {
     box-shadow: rgb(15 15 15 / 10%) 0px 0px 0px 1px, rgb(15 15 15 / 10%) 0px 3px 4px;
-    display: block;
+    /* display: block; */
     border-radius: 3px;
     overflow: hidden;
     position: static;
+    max-height: 100%;
+    /* width: 100%;
     height: 100%;
+    min-width: 300px; */
 }
 
 .exec-description h1 {
@@ -374,7 +387,8 @@ iframe {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
+    grid-gap: 20px;
+    grid-auto-flow: dense;
 }
 
 .gallery__img {
