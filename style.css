@@ -305,12 +305,21 @@ iframe {
 
 /* faq */
 
+#faq-container {
+    margin: 0 auto 0;
+    width: 50%;
+}
+
 #faq .add {
+    margin-left: auto;
+    margin-right: 0;
     /*Add is the name for the plus icon*/
     display: block;
 }
 
 #faq .minus {
+    margin-left: auto;
+    margin-right: 0;
     /*Minus is the name for the minus icon*/
     display: none;
 }
@@ -318,7 +327,7 @@ iframe {
 .question-item {
     background-color: transparent;
     margin-bottom: 10px;
-    padding: 10px 0;
+    padding: 2px 0;
     /* border-bottom: 1px solid black; */
 }
 
@@ -329,25 +338,32 @@ iframe {
 .question-title {
     display: flex;
     cursor: pointer;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
 
 .question-title h2 {
     color: black;
     font-size: 20px;
-    font-family: "Robot", sans-serif;
-    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
 }
 
 .question-answer {
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: 0;
     margin-top: 15px;
+    margin-bottom: 12px;
     font-weight: Normal;
     max-height: 0;
     overflow: hidden;
     position: relative;
     transition: max-height 0.2s;
-    font-family: "Robot", sans-serif;
+    font-family: "Roboto", sans-serif;
+    border-bottom: 1px solid rgb(223, 223, 222);
+}
+
+.question-answer p {
+    padding-bottom: 0.8rem;
 }
 
 .gallery {
