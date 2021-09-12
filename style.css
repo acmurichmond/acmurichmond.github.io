@@ -311,7 +311,7 @@ iframe {
 
 #faq-container {
     margin: 0 auto 0;
-    width: 50%;
+    width: 60%;
 }
 
 #faq .add {
@@ -384,7 +384,19 @@ iframe {
     border-radius: 10px;
 }
 
+.desc {
+    position: absolute;
+    bottom: 15px;
+    left: 16px;
+    right: 16px;
+}
+
+.desc h3 {
+    color: white;
+}
+
 .gallery__item--1 {
+    position: relative;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
