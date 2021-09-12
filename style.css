@@ -8,6 +8,7 @@
     background: transparent;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    scroll-margin-top: 5.5em;
 }
 
 html {
@@ -24,7 +25,7 @@ a:focus {
 
 #header {
     background: #132950;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     position: fixed;
     top: 0;

@@ -6,7 +6,9 @@ for (var i = 0; i < listItems.length; i++) {
         var current = document.getElementsByClassName("menu-active");
         current[0].className = "menu";
         this.className = "menu-active";
-        // document.getElementById("intro").scrollIntoView({ behavior: "smooth" });
+        // document.getElementById("faq").scrollIntoView({ behavior: "smooth" });
+        // window.scrollBy(0, -200);
+        console.log("clicked");
     });
 }
 
