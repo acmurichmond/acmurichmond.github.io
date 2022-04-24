@@ -108,13 +108,26 @@ iframe {
     color: white;
 }
 
+.navbar-wrapper{
+    width: 100%;
+    position: relative;
+    text-align:center;
+}
+
 #logo {
     float: left;
+    display:flex;
+    position:absolute;
 }
 
 .nav-menu {
+    display: inline-block;
+    width:auto;
     margin: 0;
     padding: 0;
+    /* For IE, the outcast */
+    zoom:1;
+    *display: inline;
     list-style: none;
 }
 
@@ -122,13 +135,6 @@ iframe {
     position: relative;
     white-space: nowrap;
     float: left;
-}
-
-#nav-menu-container {
-    display: table;
-    /* margin: 0 auto; */
-    margin-left: auto;
-    margin-right: 0;
 }
 
 .nav-menu a {
