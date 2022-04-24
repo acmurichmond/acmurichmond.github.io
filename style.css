@@ -30,6 +30,22 @@ a:focus {
     text-decoration: none;
 }
 
+
+/* cool scrollbar */
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #132950;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #f8234a;
+    border-radius: 0.5rem;
+}
+
 #header {
     background: #132950;
     padding: 1em;
