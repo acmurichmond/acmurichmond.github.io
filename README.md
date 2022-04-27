@@ -1,2 +1,2 @@
-# acmurichmond.github.io
-ACM@UR website
+# ACM UR
+ACM@UR information website
